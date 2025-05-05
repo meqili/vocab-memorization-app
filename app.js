@@ -1,5 +1,19 @@
 // app.js
 
+// Function to fetch the words from the words.txt file
+async function fetchWords() {
+  try {
+    const response = await fetch('words.txt');
+    const text = await response.text();
+    // Split the text into an array of words
+    const words = text.split('\n').map(word => word.trim()).filter(word => word.length > 0);
+    return words;
+  } catch (error) {
+    console.error('Error fetching words:', error);
+    return [];
+  }
+}
+
 // Function to fetch word details (synonyms, definitions, example)
 async function fetchWordDetails(word) {
   const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
@@ -21,7 +35,8 @@ function playAudio(audioUrl) {
 
 // Function to create flashcards dynamically
 async function createFlashcards() {
-  const words = ['synonyms', 'happy', 'example']; // Example words to show, you can replace with dynamic data
+  // Fetch words from words.txt
+  const words = await fetchWords();
   const flashcardContainer = document.querySelector('.flashcard-container');
   
   for (const word of words) {
@@ -71,4 +86,3 @@ async function createFlashcards() {
 
 // Initialize the app
 createFlashcards();
-
