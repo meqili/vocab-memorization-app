@@ -1,0 +1,46 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+.flashcard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flashcard {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.flashcard button {
+  margin-top: 10px;
+}
+
+.flashcard .definition {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.flashcard .example {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #777;
+}
+
