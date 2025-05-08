@@ -37,7 +37,7 @@ function playAudio(audioUrl) {
 // Function to create a single flashcard
 async function createFlashcard(word) {
   const flashcardContainer = document.querySelector('.flashcard-container');
-  flashcardContainer.innerHTML = ''; // Clear existing card
+  flashcardContainer.innerHTML = ''; // Clear previous
 
   const wordData = await fetchWordDetails(word);
   if (!wordData) {
@@ -51,20 +51,25 @@ async function createFlashcard(word) {
   const wordElement = document.createElement('h3');
   wordElement.innerText = wordData.word;
 
+  const def = wordData.meanings[0]?.definitions[0];
+
+  const detailSection = document.createElement('div');
+  detailSection.classList.add('details');
+  detailSection.style.display = 'none';
+
   const synonyms = wordData.meanings[0]?.synonyms || [];
   const synonymsElement = document.createElement('p');
-  synonymsElement.innerText = 'Synonyms: ' + (synonyms.length ? synonyms.join(', ') : 'None');
+  synonymsElement.innerHTML = `<strong>Synonyms:</strong> ${synonyms.length ? synonyms.join(', ') : 'None'}`;
 
-  const def = wordData.meanings[0]?.definitions[0];
   const definitionElement = document.createElement('p');
-  definitionElement.classList.add('definition');
-  definitionElement.innerText = 'Definition: ' + (def?.definition || 'N/A');
-  definitionElement.style.display = 'none';
+  definitionElement.innerHTML = `<strong>Definition:</strong> ${def?.definition || 'N/A'}`;
 
   const exampleElement = document.createElement('p');
-  exampleElement.classList.add('example');
-  exampleElement.innerText = 'Example: ' + (def?.example || 'N/A');
-  exampleElement.style.display = 'none';
+  exampleElement.innerHTML = `<strong>Example:</strong> ${def?.example || 'N/A'}`;
+
+  detailSection.appendChild(synonymsElement);
+  detailSection.appendChild(definitionElement);
+  detailSection.appendChild(exampleElement);
 
   const audioUrl = wordData.phonetics.find(p => p.audio)?.audio;
 
@@ -78,8 +83,7 @@ async function createFlashcard(word) {
   const showDefButton = document.createElement('button');
   showDefButton.innerText = 'Show Definition';
   showDefButton.onclick = () => {
-    definitionElement.style.display = 'block';
-    exampleElement.style.display = 'block';
+    detailSection.style.display = 'block';
     showDefButton.disabled = true;
   };
 
@@ -88,12 +92,10 @@ async function createFlashcard(word) {
   nextButton.onclick = () => showNextFlashcard();
 
   flashcard.appendChild(wordElement);
-  flashcard.appendChild(synonymsElement);
   flashcard.appendChild(audioButton);
   flashcard.appendChild(showDefButton);
   flashcard.appendChild(nextButton);
-  flashcard.appendChild(definitionElement);
-  flashcard.appendChild(exampleElement);
+  flashcard.appendChild(detailSection);
 
   flashcardContainer.appendChild(flashcard);
 }
