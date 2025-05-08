@@ -1,120 +1,143 @@
-// app.js
+// Enhanced app.js using full Merriam-Webster API data structure
 
-let currentIndex = 0;
-let words = [];
+let currentWordIndex = 0;
+let wordsList = [];
 
-// Function to fetch the words from the words.txt file
+const API_KEY = 'b15646b3-c1c4-4fcf-9332-22fa13b495a5'; // Replace with your own key
+
+// Fetch words from file
 async function fetchWords() {
   try {
     const response = await fetch('words.txt');
     const text = await response.text();
-    return text.split('\n').map(word => word.trim()).filter(word => word.length > 0);
-  } catch (error) {
-    console.error('Error fetching words:', error);
+    return text.split('\n').map(w => w.trim()).filter(Boolean);
+  } catch (err) {
+    console.error('Failed to fetch words:', err);
     return [];
   }
 }
 
-// Function to fetch word details (synonyms, definitions, example)
+// Fetch full dictionary entry
 async function fetchWordDetails(word) {
-  const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
+  const url = `https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word}?key=${API_KEY}`;
   try {
     const response = await fetch(url);
     const data = await response.json();
-    return data[0]; // First entry
-  } catch (error) {
-    console.error('Error fetching word details:', error);
+
+    if (Array.isArray(data) && typeof data[0] !== 'string') {
+      return data[0];
+    } else {
+      console.warn('Suggestions:', data);
+      return null;
+    }
+  } catch (err) {
+    console.error('Error fetching definition:', err);
     return null;
   }
 }
 
-// Function to play audio (if available)
-function playAudio(audioUrl) {
-  const audio = new Audio(audioUrl);
-  audio.play();
+// Get audio URL
+function getAudioUrl(prs) {
+  if (!prs || prs.length === 0) return null;
+  const audio = prs[0].sound?.audio;
+  if (!audio) return null;
+
+  let subdir = 'number';
+  if (/^bix/.test(audio)) subdir = 'bix';
+  else if (/^gg/.test(audio)) subdir = 'gg';
+  else if (/^[0-9]/.test(audio)) subdir = 'number';
+  else subdir = audio.charAt(0);
+
+  return `https://media.merriam-webster.com/audio/prons/en/us/mp3/${subdir}/${audio}.mp3`;
 }
 
-// Function to create a single flashcard
-async function createFlashcard(word) {
-  const flashcardContainer = document.querySelector('.flashcard-container');
-  flashcardContainer.innerHTML = ''; // Clear previous
+// Parse full definitions with examples
+function parseDefinitions(defArr) {
+  const output = [];
+  defArr.forEach(defBlock => {
+    defBlock.sseq.forEach(sseq => {
+      sseq.forEach(sense => {
+        if (sense[0] === 'sense') {
+          const senseData = sense[1];
+          const sn = senseData.sn ? `${senseData.sn}. ` : '';
 
+          const dt = senseData.dt || [];
+          dt.forEach(item => {
+            if (item[0] === 'text') {
+              const clean = item[1].replace(/{.*?}/g, '');
+              output.push(sn + clean);
+            } else if (item[0] === 'vis') {
+              item[1].forEach(eg => {
+                output.push(`Example: ${eg.t.replace(/{.*?}/g, '')}`);
+              });
+            }
+          });
+        }
+      });
+    });
+  });
+  return output;
+}
+
+// Initialize a flashcard
+async function showFlashcard(index) {
+  const word = wordsList[index];
   const wordData = await fetchWordDetails(word);
+  const container = document.querySelector('.flashcard-container');
+  container.innerHTML = '';
+
   if (!wordData) {
-    flashcardContainer.innerHTML = `<p>Could not fetch data for: ${word}</p>`;
+    container.innerHTML = `<p>Could not fetch data for: ${word}</p>`;
     return;
   }
 
   const flashcard = document.createElement('div');
-  flashcard.classList.add('flashcard');
+  flashcard.className = 'flashcard';
 
-  const wordElement = document.createElement('h3');
-  wordElement.innerText = wordData.word;
+  const headword = document.createElement('h3');
+  headword.textContent = (wordData.hwi?.hw || wordData.meta.id).replace(/\*/g, '');
 
-  const def = wordData.meanings[0]?.definitions[0];
+  const fl = document.createElement('p');
+  fl.textContent = wordData.fl || '';
 
-  const detailSection = document.createElement('div');
-  detailSection.classList.add('details');
-  detailSection.style.display = 'none';
+  const audioUrl = getAudioUrl(wordData.hwi?.prs);
+  const audioBtn = document.createElement('button');
+  audioBtn.textContent = '🔊 Play Audio';
+  audioBtn.onclick = () => audioUrl && new Audio(audioUrl).play();
 
-  const synonyms = wordData.meanings[0]?.synonyms || [];
-  const synonymsElement = document.createElement('p');
-  synonymsElement.innerHTML = `<strong>Synonyms:</strong> ${synonyms.length ? synonyms.join(', ') : 'None'}`;
+  const defBtn = document.createElement('button');
+  defBtn.textContent = '📖 Show Definition';
+  const defBox = document.createElement('div');
+  defBox.style.display = 'none';
+  defBox.className = 'details';
+  defBtn.onclick = () => {
+    if (defBox.innerHTML === '') {
+      const defs = parseDefinitions(wordData.def);
+      defBox.innerHTML = defs.map(d => `<p>${d}</p>`).join('');
+    }
+    defBox.style.display = defBox.style.display === 'none' ? 'block' : 'none';
+  };  
 
-  const definitionElement = document.createElement('p');
-  definitionElement.innerHTML = `<strong>Definition:</strong> ${def?.definition || 'N/A'}`;
-
-  const exampleElement = document.createElement('p');
-  exampleElement.innerHTML = `<strong>Example:</strong> ${def?.example || 'N/A'}`;
-
-  detailSection.appendChild(synonymsElement);
-  detailSection.appendChild(definitionElement);
-  detailSection.appendChild(exampleElement);
-
-  const audioUrl = wordData.phonetics.find(p => p.audio)?.audio;
-
-  const audioButton = document.createElement('button');
-  audioButton.innerText = audioUrl ? 'Play Audio' : 'No Audio';
-  audioButton.disabled = !audioUrl;
-  if (audioUrl) {
-    audioButton.onclick = () => playAudio(audioUrl);
-  }
-
-  const showDefButton = document.createElement('button');
-  showDefButton.innerText = 'Show Definition';
-  showDefButton.onclick = () => {
-    detailSection.style.display = 'block';
-    showDefButton.disabled = true;
+  const nextBtn = document.createElement('button');
+  nextBtn.textContent = '➡️ Next';
+  nextBtn.onclick = () => {
+    if (currentWordIndex < wordsList.length - 1) {
+      currentWordIndex++;
+      showFlashcard(currentWordIndex);
+    } else {
+      container.innerHTML = '<p>🎉 You have finished todays study</p>';
+    }
   };
 
-  const nextButton = document.createElement('button');
-  nextButton.innerText = 'Next Word';
-  nextButton.onclick = () => showNextFlashcard();
-
-  flashcard.appendChild(wordElement);
-  flashcard.appendChild(audioButton);
-  flashcard.appendChild(showDefButton);
-  flashcard.appendChild(nextButton);
-  flashcard.appendChild(detailSection);
-
-  flashcardContainer.appendChild(flashcard);
+  flashcard.append(headword, fl, audioBtn, defBtn, defBox, nextBtn);
+  container.appendChild(flashcard);
 }
 
-// Function to show the next flashcard
-function showNextFlashcard() {
-  currentIndex++;
-  if (currentIndex >= words.length) {
-    document.querySelector('.flashcard-container').innerHTML = '<p>All done for today!</p>';
-    return;
-  }
-  createFlashcard(words[currentIndex]);
-}
-
-// Initialize the app
-document.addEventListener('DOMContentLoaded', async () => {
-  words = await fetchWords();
-  if (words.length > 0) {
-    createFlashcard(words[0]);
+// Startup
+window.addEventListener('DOMContentLoaded', async () => {
+  wordsList = await fetchWords();
+  if (wordsList.length > 0) {
+    showFlashcard(currentWordIndex);
   } else {
     document.querySelector('.flashcard-container').innerHTML = '<p>No words found.</p>';
   }
