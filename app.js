@@ -96,9 +96,11 @@ async function showFlashcard(index) {
 
   const headword = document.createElement('h3');
   headword.textContent = (wordData.hwi?.hw || wordData.meta.id).replace(/\*/g, '');
+  headword.className = 'centered-text';
 
   const fl = document.createElement('p');
   fl.textContent = wordData.fl || '';
+  fl.className = 'centered-text';
 
   const audioUrl = getAudioUrl(wordData.hwi?.prs);
   const audioBtn = document.createElement('button');
