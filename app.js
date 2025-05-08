@@ -1,13 +1,14 @@
 // app.js
 
+let currentIndex = 0;
+let words = [];
+
 // Function to fetch the words from the words.txt file
 async function fetchWords() {
   try {
     const response = await fetch('words.txt');
     const text = await response.text();
-    // Split the text into an array of words
-    const words = text.split('\n').map(word => word.trim()).filter(word => word.length > 0);
-    return words;
+    return text.split('\n').map(word => word.trim()).filter(word => word.length > 0);
   } catch (error) {
     console.error('Error fetching words:', error);
     return [];
@@ -20,7 +21,7 @@ async function fetchWordDetails(word) {
   try {
     const response = await fetch(url);
     const data = await response.json();
-    return data[0]; // Get the first entry
+    return data[0]; // First entry
   } catch (error) {
     console.error('Error fetching word details:', error);
     return null;
@@ -33,56 +34,86 @@ function playAudio(audioUrl) {
   audio.play();
 }
 
-// Function to create flashcards dynamically
-async function createFlashcards() {
-  // Fetch words from words.txt
-  const words = await fetchWords();
+// Function to create a single flashcard
+async function createFlashcard(word) {
   const flashcardContainer = document.querySelector('.flashcard-container');
-  
-  for (const word of words) {
-    const wordData = await fetchWordDetails(word);
+  flashcardContainer.innerHTML = ''; // Clear existing card
 
-    if (wordData) {
-      const flashcard = document.createElement('div');
-      flashcard.classList.add('flashcard');
-
-      // Word & Synonyms
-      const wordElement = document.createElement('h3');
-      wordElement.innerText = wordData.word;
-
-      const synonymsElement = document.createElement('p');
-      synonymsElement.innerText = 'Synonyms: ' + wordData.meanings[0].synonyms.join(', ');
-
-      // Audio button
-      const audioButton = document.createElement('button');
-      audioButton.innerText = 'Play Audio';
-      audioButton.onclick = () => playAudio(wordData.phonetics[0]?.audio);
-
-      // Definition & Example
-      const definitionElement = document.createElement('p');
-      definitionElement.classList.add('definition');
-      definitionElement.innerText = 'Definition: ' + wordData.meanings[0].definitions[0].definition;
-
-      const exampleElement = document.createElement('p');
-      exampleElement.classList.add('example');
-      exampleElement.innerText = 'Example: ' + wordData.meanings[0].definitions[0].example;
-
-      flashcard.appendChild(wordElement);
-      flashcard.appendChild(synonymsElement);
-      flashcard.appendChild(audioButton);
-      flashcard.appendChild(definitionElement);
-      flashcard.appendChild(exampleElement);
-
-      // Toggle the definition and example when clicked
-      flashcard.onclick = () => {
-        definitionElement.classList.toggle('definition');
-        exampleElement.classList.toggle('example');
-      };
-
-      flashcardContainer.appendChild(flashcard);
-    }
+  const wordData = await fetchWordDetails(word);
+  if (!wordData) {
+    flashcardContainer.innerHTML = `<p>Could not fetch data for: ${word}</p>`;
+    return;
   }
+
+  const flashcard = document.createElement('div');
+  flashcard.classList.add('flashcard');
+
+  const wordElement = document.createElement('h3');
+  wordElement.innerText = wordData.word;
+
+  const synonyms = wordData.meanings[0]?.synonyms || [];
+  const synonymsElement = document.createElement('p');
+  synonymsElement.innerText = 'Synonyms: ' + (synonyms.length ? synonyms.join(', ') : 'None');
+
+  const def = wordData.meanings[0]?.definitions[0];
+  const definitionElement = document.createElement('p');
+  definitionElement.classList.add('definition');
+  definitionElement.innerText = 'Definition: ' + (def?.definition || 'N/A');
+  definitionElement.style.display = 'none';
+
+  const exampleElement = document.createElement('p');
+  exampleElement.classList.add('example');
+  exampleElement.innerText = 'Example: ' + (def?.example || 'N/A');
+  exampleElement.style.display = 'none';
+
+  const audioUrl = wordData.phonetics.find(p => p.audio)?.audio;
+
+  const audioButton = document.createElement('button');
+  audioButton.innerText = audioUrl ? 'Play Audio' : 'No Audio';
+  audioButton.disabled = !audioUrl;
+  if (audioUrl) {
+    audioButton.onclick = () => playAudio(audioUrl);
+  }
+
+  const showDefButton = document.createElement('button');
+  showDefButton.innerText = 'Show Definition';
+  showDefButton.onclick = () => {
+    definitionElement.style.display = 'block';
+    exampleElement.style.display = 'block';
+    showDefButton.disabled = true;
+  };
+
+  const nextButton = document.createElement('button');
+  nextButton.innerText = 'Next Word';
+  nextButton.onclick = () => showNextFlashcard();
+
+  flashcard.appendChild(wordElement);
+  flashcard.appendChild(synonymsElement);
+  flashcard.appendChild(audioButton);
+  flashcard.appendChild(showDefButton);
+  flashcard.appendChild(nextButton);
+  flashcard.appendChild(definitionElement);
+  flashcard.appendChild(exampleElement);
+
+  flashcardContainer.appendChild(flashcard);
+}
+
+// Function to show the next flashcard
+function showNextFlashcard() {
+  currentIndex++;
+  if (currentIndex >= words.length) {
+    document.querySelector('.flashcard-container').innerHTML = '<p>All done for today!</p>';
+    return;
+  }
+  createFlashcard(words[currentIndex]);
 }
 
 // Initialize the app
-createFlashcards();
+document.addEventListener('DOMContentLoaded', async () => {
+  words = await fetchWords();
+  if (words.length > 0) {
+    createFlashcard(words[0]);
+  } else {
+    document.querySelector('.flashcard-container').innerHTML = '<p>No words found.</p>';
+  }
+});
