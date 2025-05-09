@@ -113,5 +113,3 @@ You’ll want:
 ## 🧠 Summary
 
 This is building a **dynamic system** that learns **how *you* learn**, using a realistic forgetting curve. SSP-MMC gives you the math to decide *when* to review a word so you remember it long-term, without wasting time reviewing too early or too late.
-
-Would you like help generating the local storage schema or JSON format for keeping track of each word's review history and halflife?
