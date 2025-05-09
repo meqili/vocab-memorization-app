@@ -1,0 +1,1142 @@
+{
+  "psyche": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "inventory": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "survivalist": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "visionary": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "stockpile": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "perishable": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "ubiquitously": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "intrinsically": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "contextualization": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "panorama": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "purview": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "epiphenomenal": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "Causality": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "crux": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "overarching": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "autonomy": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "ripple effect": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "imperative": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "heuristic": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "fickle": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "miscegenation": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "societal": {
+    "halflife": 0.5,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "imbeciles": {
+    "halflife": 0.25,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "racketeer": {
+    "halflife": 0.25,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-10"
+  },
+  "bootlegger": {
+    "halflife": 1.2,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-11"
+  },
+  "Scant": {
+    "halflife": 1.728,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-11"
+  },
+  "impending": {
+    "halflife": 0.0225,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "conscientious": {
+    "halflife": 1.2,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-11"
+  },
+  "predicaments": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "exogenous": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "endogenous": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "self-policing": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "plunder": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "proverbial": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "inferior": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "inoculate": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "numeracy": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "procurable": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "atrocity": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "repent": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "intravenously": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "whereupon": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "diabolical": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "expedient": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "disclose": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "promulgate": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "scrutiny": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "detrimental": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "repudiate": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "scrutinized": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "Coercion": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "inducement": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "infirmity": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "proprioception": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "acyclic": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "forfeit": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "inflict": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "sects": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "enormously": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "mitigate": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "staggering": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "forprofit": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "exhilarating": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "hullabaloo": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "earnest": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "remorselessly": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "snobbery": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "revenue": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "apprehension": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "convoluted": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "enshrined": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "bylaws": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "seasoned": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "prominent": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "vestiges": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "gentrified": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "retroactively": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "vivarium": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "outstrip": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "eclectic": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "recanted": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "ouster": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "muster": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "holdover": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "prescient": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "authoritative": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "premise": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "sabotage": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "unquenchable": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "entrepreneurial": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "void": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "perseverance": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "pivotal": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "autopilot": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "trajectory": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "quadrant": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "sage": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "dumbfounded": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "centenarian": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "predate": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "hasten": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "demise": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "entrepreneur": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "dystopia": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "destitution": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "tycoon": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "lucrative": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "wrath": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "surge": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "alleged": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "prosecutor": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "irrevocably": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "schemer": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "swindle": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "siphon": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "pilgrimage": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "insatiable": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "perpetual": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "culprit": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "exacerbate": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "stupendously": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "distraught": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "pubescent": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "horrendous": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "geriatric": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "apocalyptic": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "bulldoze": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "gerontologist": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "imminent": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "rambling": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "setback": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "complacency": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "pessimism": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "profoundly": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "keenly": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "uncharted": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "existential": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "spoof": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "withstand": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "confiscate": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "reliance": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "fallacy": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "crusade": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "smattering": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "default": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "aristocratic": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "outsource": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "splurge": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "hinder": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "gawk": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "intermittent": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "aerobic": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "bachelorette": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "fungible": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "indenture": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "succumb": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "stale": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "inwardly": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "legislator": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "pollster": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "hamper": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "enduring": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "endanger": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "obscure": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "misogyny": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "feud": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "prejudice": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "denigration": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "throes": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "pit": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "toil": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "upscale": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "notorious": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "emulate": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "stingy": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "startling": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "preclude": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "oppressive": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "retort": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "ostracize": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "parity": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "patriarchy": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "monogamous": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "notably": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "demoralizing": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "incubator": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "infighting": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "defy": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "implicitly": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "incentive": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "gloomy": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "glimpse": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "consciousness": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "clout": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "connotation": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "fathom": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "entrenched": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "ferocious": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "essence": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "devilishly": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "billionaire": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "doomed": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "disproportionately": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "contentious": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "blip": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "altruism": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "ailment": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "fixate": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "crescendo": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "Offset": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "Slump": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "recoup": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "formidable": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "subsidies": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "tariffs": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "quadrupled": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "concomitant": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "meticulously": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "triumph": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "ushering": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "hydroelectric": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "reap": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "opt for": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "kneel": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "moniker": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "nymphomaniac": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "right off the bat": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  },
+  "Rhinoceros": {
+    "halflife": 1.0,
+    "last_reviewed": "2025-05-09",
+    "next_due_date": "2025-05-09"
+  }
+}
