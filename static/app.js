@@ -1,17 +1,16 @@
-let currentWordIndex = 0;
-let wordsList = [];
-let reviewHistory = [];
-
-const API_KEY = 'b15646b3-c1c4-4fcf-9332-22fa13b495a5';
-const API_URL = 'http://127.0.0.1:5000/get-due-words';
+let queue = [];
+let reviewHistory = {};
+let lastReviewedWord = null;
+import { API_URL, API_KEY } from './constants.js';  // Adjust path if necessary
 
 async function fetchDueWords() {
   try {
     const response = await fetch(API_URL);
     if (response.ok) {
-      wordsList = await response.json();
-      if (wordsList.length > 0) {
-        showFlashcard(currentWordIndex);
+      const data = await response.json();
+      queue = [...data];
+      if (queue.length > 0) {
+        showFlashcard();
       } else {
         document.querySelector('.flashcard-container').innerHTML = '<p class="empty">No due words today! 🎉</p>';
       }
@@ -46,14 +45,14 @@ function parseShortDef(defArr) {
   return defArr.map((def, index) => `${index + 1}. ${def}`);
 }
 
-async function showFlashcard(index) {
+async function showFlashcard() {
   const container = document.querySelector('.flashcard-container');
-  if (index >= wordsList.length) {
+  if (queue.length === 0) {
     container.innerHTML = '<p class="empty">🎉 You have finished today\'s study</p>';
     return;
   }
 
-  const word = wordsList[index];
+  const word = queue[0];
   const wordData = await fetchWordDetails(word);
   container.innerHTML = '';
 
@@ -65,7 +64,6 @@ async function showFlashcard(index) {
   const flashcard = document.createElement('div');
   flashcard.className = 'flashcard';
 
-  // Header container for nav controls
   const topBar = document.createElement('div');
   topBar.className = 'top-bar';
 
@@ -73,15 +71,15 @@ async function showFlashcard(index) {
   backBtn.textContent = '⬅️ Back';
   backBtn.className = 'nav-btn top-left';
   backBtn.onclick = () => {
-    if (currentWordIndex > 0) {
-      currentWordIndex--;
-      showFlashcard(currentWordIndex);
+    if (queue.length > 1) {
+      queue.unshift(queue.pop());
+      showFlashcard();
     }
   };
-  backBtn.style.visibility = currentWordIndex === 0 ? 'hidden' : 'visible';
+  backBtn.style.visibility = queue.length > 1 ? 'visible' : 'hidden';
 
   const homeLink = document.createElement('a');
-  homeLink.href = ''; // leave empty for now
+  homeLink.href = '';
   homeLink.textContent = '🏠 Return to Home Page';
   homeLink.className = 'top-right';
 
@@ -117,20 +115,22 @@ async function showFlashcard(index) {
   const feedbackContainer = document.createElement('div');
   feedbackContainer.className = 'feedback';
 
-  const previousFeedback = reviewHistory[index]?.feedback;
+  const previousFeedback = (word === lastReviewedWord) ? reviewHistory[word]?.feedback : null;
 
   const makeReviewButton = (label, value) => {
     const btn = document.createElement('button');
     btn.textContent = label;
     btn.className = 'feedback-btn';
-    if (previousFeedback === value) {
-      btn.classList.add('selected');
-    }
+    if (previousFeedback === value) btn.classList.add('selected');
     btn.onclick = () => {
-      reviewHistory[index] = { word, feedback: value };
+      reviewHistory[word] = { feedback: value };
+      lastReviewedWord = word; // Set for back navigation
+
+      // Remove word from queue
+      queue.shift();
+      if (value !== 'easy') queue.push(word); // Re-add to end if not "easy"
+      showFlashcard();
       handleReviewFeedback(word, value);
-      currentWordIndex++;
-      showFlashcard(currentWordIndex);
     };
     return btn;
   };
@@ -145,13 +145,21 @@ async function showFlashcard(index) {
   container.appendChild(flashcard);
 }
 
+const reviewedWords = new Set(); // track which words have been updated
+
 function handleReviewFeedback(word, rating) {
   console.log(`Word: ${word}, Feedback: ${rating}`);
-  fetch('/update-word', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ word, feedback: rating })
-  }).catch(error => console.error('Error sending feedback:', error));
+
+  // Only update the server the first time
+  if (!reviewedWords.has(word)) {
+    reviewedWords.add(word);
+
+    fetch('/update-word', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ word, feedback: rating })
+    }).catch(error => console.error('Error sending feedback:', error));
+  }
 }
 
 window.addEventListener('DOMContentLoaded', fetchDueWords);

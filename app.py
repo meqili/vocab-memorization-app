@@ -9,7 +9,7 @@ initialize_word_data()
 app = Flask(__name__)
 
 # Set the maximum number of words you want to review per day
-MAX_WORDS_PER_DAY = 20
+MAX_WORDS_PER_DAY = 2
 
 @app.route('/')
 def home():
@@ -29,9 +29,9 @@ def update_word_route():
     word = data.get('word')
     feedback = data.get('feedback')
 
-    word_data = load_word_data()
+    word_data = load_word_data('word_data.json')
     word_data = update_word(word_data, word, feedback)
-    save_word_data(word_data)
+    save_word_data(word_data, 'word_data.json')
 
     return jsonify({'status': 'success'})
 

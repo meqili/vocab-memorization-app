@@ -1,123 +1,123 @@
 {
   "psyche": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 1.125,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "inventory": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 1.125,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "survivalist": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 0.6,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "visionary": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 1.25,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "stockpile": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 1.25,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "perishable": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 0.625,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "ubiquitously": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 0.6,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "intrinsically": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 1.25,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "contextualization": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 1.25,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "panorama": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 1.25,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "purview": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 1.25,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "epiphenomenal": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 1.25,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "Causality": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 1.25,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "crux": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 1.25,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "overarching": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 1.25,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "autonomy": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 1.25,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "ripple effect": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 1.25,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "imperative": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 1.25,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "heuristic": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 1.25,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "fickle": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 1.25,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "miscegenation": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 1.25,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "societal": {
-    "halflife": 0.5,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 1.25,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "imbeciles": {
-    "halflife": 0.25,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 0.028124999999999997,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-14"
   },
   "racketeer": {
-    "halflife": 0.25,
-    "last_reviewed": "2025-05-09",
-    "next_due_date": "2025-05-10"
+    "halflife": 0.703125,
+    "last_reviewed": "2025-05-14",
+    "next_due_date": "2025-05-15"
   },
   "bootlegger": {
     "halflife": 1.2,
@@ -130,7 +130,7 @@
     "next_due_date": "2025-05-11"
   },
   "impending": {
-    "halflife": 0.0225,
+    "halflife": 0.027,
     "last_reviewed": "2025-05-09",
     "next_due_date": "2025-05-09"
   },
